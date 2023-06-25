@@ -17,6 +17,8 @@
 - Python 3.8.13
 
 ## Usage
+### Dataset and Pre-processing
+### Training
 We train our model on one single NVIDIA 3090 GPU for each dataset.
 
 To produce the claimed results for MACT dataset:
