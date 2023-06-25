@@ -1,8 +1,12 @@
 # MagicNet: Semi-Supervised Multi-Organ Segmentation via Magic-Cube Partition and Recovery (CVPR 2023)
-Duowen Chen, Yunhao Bai, Wei Shen, Qingli Li, Lequan Yu and Yan Wang.
 ## Introduction
-Official code for "[MagicNet: Semi-Supervised Multi-Organ Segmentation via Magic-Cube Partition and Recovery](https://arxiv.org/abs/2212.14310)" (CVPR 2023).
-![framework](https://github.com/DeepMed-Lab-ECNU/MagicNet/blob/main/framework.png)
+> [**MagicNet: Semi-Supervised Multi-Organ Segmentation via Magic-Cube Partition and Recovery**](https://arxiv.org/abs/2212.14310),   <br/>
+> **Duowen Chen**, Yunhao Bai, Wei Shen, Qingli Li, Lequan Yu and Yan Wang. <br/>
+> In: *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023*  <br/>
+> [[arXiv](https://arxiv.org/abs/2212.14310)][[Bibetex]()][[Supp](https://openaccess.thecvf.com/content/CVPR2023/supplemental/Chen_MagicNet_Semi-Supervised_Multi-Organ_CVPR_2023_supplemental.pdf)]
+
+<div align="center" border=> <img src=framework.png width="700" > </div>
+
 ## News
 - [2023.06.25] Our codes are released!
 - [2023.03.16] Repo created. Paper and code will come soon.
