@@ -3,7 +3,7 @@
 > [**MagicNet: Semi-Supervised Multi-Organ Segmentation via Magic-Cube Partition and Recovery**](https://arxiv.org/abs/2212.14310),   <br/>
 > **Duowen Chen**, Yunhao Bai, Wei Shen, Qingli Li, Lequan Yu and Yan Wang. <br/>
 > In: *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023*  <br/>
-> [[arXiv](https://arxiv.org/abs/2212.14310)][[Bibetex]()][[Supp](https://openaccess.thecvf.com/content/CVPR2023/supplemental/Chen_MagicNet_Semi-Supervised_Multi-Organ_CVPR_2023_supplemental.pdf)]
+> [[arXiv](https://arxiv.org/abs/2212.14310)][[bibtex](https://github.com/DeepMed-Lab-ECNU/MagicNet)][[supp](https://openaccess.thecvf.com/content/CVPR2023/supplemental/Chen_MagicNet_Semi-Supervised_Multi-Organ_CVPR_2023_supplemental.pdf)]
 
 <div align="center" border=> <img src=framework.png width="700" > </div>
 
