@@ -59,54 +59,6 @@ class MACT(Dataset):
         return sample
 
 
-class AMOS(Dataset):
-    """ AMOS Dataset """
-    def __init__(self, image_list, base_dir=None, transform=None):
-        self._base_dir = base_dir
-        self.transform = transform
-        self.image_list = ['{:0>4}'.format(i + 1) for i in image_list]
-
-        print("Total {} samples for training".format(len(self.image_list)))
-
-    def __len__(self):
-        return len(self.image_list)
-
-    def __getitem__(self, idx):
-        image_name = self.image_list[idx]
-        # ex: self._base_dir: '../data/MACT_h5'
-        image_path = self._base_dir + '/{}.h5'.format(image_name)
-        h5f = h5py.File(image_path, 'r')
-        image, label = h5f['image'][:], h5f['label'][:]
-        sample = {'image': image, 'label': label}
-        if self.transform:
-            sample = self.transform(sample)
-        return sample
-
-
-class WORD(Dataset):
-    """ WORD Dataset """
-    def __init__(self, image_list, base_dir=None, transform=None):
-        self._base_dir = base_dir
-        self.transform = transform
-        self.image_list = image_list
-
-        print("Total {} samples for training".format(len(self.image_list)))
-
-    def __len__(self):
-        return len(self.image_list)
-
-    def __getitem__(self, idx):
-        image_name = self.image_list[idx]
-        # ex: self._base_dir: '../data/MACT_h5'
-        image_path = self._base_dir + '/{}.h5'.format(image_name)
-        h5f = h5py.File(image_path, 'r')
-        image, label = h5f['image'][:], h5f['label'][:]
-        sample = {'image': image, 'label': label}
-        if self.transform:
-            sample = self.transform(sample)
-        return sample
-
-
 class RandomCrop(object):
     """
     Crop randomly the image in a sample
