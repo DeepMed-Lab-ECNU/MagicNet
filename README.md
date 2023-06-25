@@ -15,7 +15,8 @@ Official code for "[MagicNet: Semi-Supervised Multi-Organ Segmentation via Magic
 - Python 3.8.13
 
 ## Usage
-We train our model on one single NVIDIA 3090 GPU for each dataset. 
+We train our model on one single NVIDIA 3090 GPU for each dataset.
+
 To produce the claimed results for MACT dataset:
 ```
 # For 10% labeled data,
