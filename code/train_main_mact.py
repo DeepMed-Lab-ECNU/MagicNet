@@ -233,9 +233,10 @@ def train(train_list, test_list, fold_id=1):
 
             consistency_loss = 0
             count_consist = 1
-
+            consistency_weight = get_current_consistency_weight(iter_num // 300)
+            
             # Within-image Partition-and-Recovery
-            if iter_num > 12000 and feat_list is not None:
+            if consistency_weight >= args.consistency and feat_list is not None:
                 embed_list = []
                 for i in range(bs):
                     # pred_tmp: [f1-f5] -> 27x9x32x32x32
@@ -287,7 +288,6 @@ def train(train_list, test_list, fold_id=1):
             if iter_num % 20 == 0 and len(dist_logger.class_total_pixel_store):
                 dist_logger.update_class_dist()
 
-            consistency_weight = get_current_consistency_weight(iter_num // 300)
             # debiase the pseudo-label: blend ema and unmixed_within pseudo-label
             if pred_class_mix is None:
                 consistency_loss_unmix = dice_loss(outputs_unmix_soft[labeled_bs:], pred_class_teacher)
