@@ -20,6 +20,7 @@ To produce the claimed results for MACT dataset:
 ```
 # For 10% labeled data,
 CUDA_VISIBLE_DEVICES=0 python train_main_mact.py --labelnum=7
+
 # For 20% labeled data, 
 CUDA_VISIBLE_DEVICES=0 python train_main_mact.py --labelnum=13
 ```
@@ -27,6 +28,7 @@ To produce the claimed results for BTCV dataset:
 ```
 # For 30% labeled data,
 CUDA_VISIBLE_DEVICES=0 python train_main_btcv.py --labelnum=5
+
 # For 40% labeled data, 
 CUDA_VISIBLE_DEVICES=0 python train_main_btcv.py --labelnum=7
 ```
