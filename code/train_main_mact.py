@@ -259,7 +259,7 @@ def train(train_list, test_list, fold_id=1):
             pred_class_mix = None
             with torch.no_grad():
                 # To store some class pixels at the beginning of training to calculate the organ-class dist
-                if iter_num > 12000 and feat_list is not None:
+                if consistency_weight > args.consistency and feat_list is not None:
                     # Get organ-class distribution
                     current_organ_dist = dist_logger.get_class_dist().cuda()  # (1, C)
                     # Normalize
@@ -325,7 +325,6 @@ def train(train_list, test_list, fold_id=1):
                 for param_group in optimizer.param_groups:
                     param_group['lr'] = lr_
 
-            # if iter_num >= 2500 and iter_num % 2500 == 0:
             if iter_num >= max_iterations:
                 model.eval()
                 dice_all, std_all, metric_all_cases = test_util.validation_all_case_mact(model,
