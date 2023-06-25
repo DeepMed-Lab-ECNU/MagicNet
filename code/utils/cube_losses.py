@@ -129,30 +129,3 @@ def get_mix_embed(ema_model, feat_list, ori_shape, unlabeled_bs=2):
         un_embed = unmix_tensor(embed_all, ori_shape)
 
     return un_embed
-
-
-def shuffle_within_feat(model, patch_list, idx, unmix_shape, ts=32):
-
-    ### shuffle-unmix loss
-    # 27x[4, 1, 1, 32, 32, 32] -> 4x27x1x32x32x32
-    patches = torch.cat(patch_list, dim=1)
-    bs = patches.shape[0]
-
-    # 4x27x1x32x32x32 -> 4x27x1x32x32x32(shuffle) -> 4x1x96x96x96
-    patches_tmp = patches[:, idx].view(patches.size())
-    input_tmp_shuffle = unmix_tensor(patches_tmp, unmix_shape)
-
-    # embed_shuffle: 4x16x96x96x96 -> 27 x [4, 1, 16, 32, 32, 32]
-    _, embed_shuffle = model(input_tmp_shuffle)
-    embed_shuffle_shape = embed_shuffle.shape
-    embed_list = get_patch_list(embed_shuffle, ts=ts)
-
-    # embed_list: 27 x [4, 1, 16, 32, 32, 32] -> 4x27x16x32x32x32
-    embed_all_shuffle = torch.cat(embed_list, dim=1)
-    # -> 4x27x16x32x32x32 (back to original order) -> 4x16x96x96x96
-    idx_back = torch.argsort(idx)
-    embed_all = embed_all_shuffle[:, idx_back].view(embed_all_shuffle.size())
-    embed_unmix_within = unmix_tensor(embed_all, embed_shuffle_shape)
-
-    return embed_unmix_within
-
