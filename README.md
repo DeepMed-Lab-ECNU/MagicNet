@@ -20,8 +20,16 @@
 ## Usage
 ### Dataset and Pre-processing
 The datasets used in our paper are MACT dataset and BTCV dataset. You can download directly the preprocessed data from [baidu netdisk](https://pan.baidu.com/s/1OVbDXzE_XaTtFGeILQtRyQ) (password: 638u).
-### Training
-We train our model on one single NVIDIA 3090 GPU for each dataset.
+### Training Steps
+1. Clone the repo and create data path:
+```
+git clone https://github.com/DeepMed-Lab-ECNU/MagicNet.git
+cd MagicNet
+mkdir data # create data path
+```
+2. Put the preprocessed data in ./data/MACT_h5 for MACT dataset. (./data/btcv_h5 for BTCV dataset) and then
+```cd code```
+3. We train our model on one single NVIDIA 3090 GPU for each dataset.
 
 To produce the claimed results for MACT dataset:
 ```
