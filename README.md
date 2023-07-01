@@ -19,7 +19,7 @@
 
 ## Usage
 ### Dataset and Pre-processing
-The datasets used in our paper are MACT dataset and BTCV dataset. You can download directly the preprocessed data from [baidu netdisk](https://pan.baidu.com/s/1OVbDXzE_XaTtFGeILQtRyQ) (password: 638u).
+The datasets used in our paper are MACT dataset and BTCV dataset. You can download directly our preprocessed data from [baidu netdisk](https://pan.baidu.com/s/1OVbDXzE_XaTtFGeILQtRyQ) (password: 638u).
 ### Training Steps
 1. Clone the repo and create data path:
 ```
