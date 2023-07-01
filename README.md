@@ -8,6 +8,7 @@
 <div align="center" border=> <img src=framework.png width="700" > </div>
 
 ## News
+- [2023.07.01] We have updated the preprocessed data!
 - [2023.06.25] Our codes are released!
 - [2023.03.16] Repo created. Paper and code will come soon.
 
@@ -18,6 +19,7 @@
 
 ## Usage
 ### Dataset and Pre-processing
+The datasets used in our paper are MACT dataset and BTCV dataset. You can download directly the preprocessed data from [baidu netdisk](https://pan.baidu.com/s/1OVbDXzE_XaTtFGeILQtRyQ) (password: 638u).
 ### Training
 We train our model on one single NVIDIA 3090 GPU for each dataset.
 
