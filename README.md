@@ -8,6 +8,7 @@
 <div align="center" border=> <img src=framework.png width="700" > </div>
 
 ## News
+- [2023.10.25] We have uploaded the data-splitting file 'btcv.txt' for BTCV dataset to help you reproduce/follow our work^_^!
 - [2023.07.01] We have updated the preprocessed data!
 - [2023.06.25] Our codes are released!
 - [2023.03.16] Repo created. Paper and code will come soon.
