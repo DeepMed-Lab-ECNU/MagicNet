@@ -8,6 +8,7 @@
 <div align="center" border=> <img src=framework.png width="700" > </div>
 
 ## News
+- [2023.12.15] We have updated 'cube_losses.py'.
 - [2023.10.25] We have uploaded the data-splitting file 'btcv.txt' for BTCV dataset to help you reproduce/follow our work^_^!
 - [2023.07.01] We have updated the preprocessed data!
 - [2023.06.25] Our codes are released!
@@ -49,7 +50,7 @@ CUDA_VISIBLE_DEVICES=0 python train_main_btcv.py --labelnum=5
 CUDA_VISIBLE_DEVICES=0 python train_main_btcv.py --labelnum=7
 ```
 ## Citation
-If this code is useful for your research, please consider citing:
+If this code is useful for your research, please consider giving star to our repositorty and citing our work:
 ```
 @InProceedings{Chen_2023_CVPR, 
 	author = {Chen, Duowen and Bai, Yunhao and Shen, Wei and Li, Qingli and Yu, Lequan and Wang, Yan}, 
@@ -60,3 +61,5 @@ If this code is useful for your research, please consider citing:
 	pages = {23869-23878} 
 }
 ```
+## Questions
+If you have any questions, welcome contact me at 'duowen_chen@hotmail.com'
