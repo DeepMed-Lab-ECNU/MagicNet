@@ -50,7 +50,7 @@ CUDA_VISIBLE_DEVICES=0 python train_main_btcv.py --labelnum=5
 CUDA_VISIBLE_DEVICES=0 python train_main_btcv.py --labelnum=7
 ```
 ## Citation
-If this code is useful for your research, please consider giving star to our repositorty and citing our work:
+If this code is useful for your research, please consider giving star to our repository and citing our work:
 ```
 @InProceedings{Chen_2023_CVPR, 
 	author = {Chen, Duowen and Bai, Yunhao and Shen, Wei and Li, Qingli and Yu, Lequan and Wang, Yan}, 
