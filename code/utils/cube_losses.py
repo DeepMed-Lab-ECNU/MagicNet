@@ -106,7 +106,7 @@ def get_mix_pl(ema_model, feat_list, ori_shape, unlabeled_bs=2):
         pred_list = []
         for i in range(unlabeled_bs):
             # pred_tmp: [f1-f5] -> 27x9x32x32x32
-            pred_tmp = ema_model.forward_decoder(feat_list[i])[0].detach_()
+            pred_tmp = ema_model.forward_decoder(feat_list[i + unlabeled_bs])[0].detach_()
             pred_list.append(pred_tmp.unsqueeze(0))
         # pred_all: 2 x [1, 27, 9, 32, 32, 32] -> 2, 27, 9, 32, 32, 32 -> 2, 9, 96, 96, 96
         pred_all = torch.cat(pred_list, dim=0)
