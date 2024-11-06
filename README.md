@@ -14,6 +14,9 @@
 - [2023.07.01] We have updated the preprocessed data!
 - [2023.06.25] Our codes are released!
 - [2023.03.16] Repo created. Paper and code will come soon.
+  
+## Questions
+If you have any questions, welcome contact me at 'duowen_chen@hotmail.com'
 
 ## Installation
 - PyTorch 1.12.0
@@ -62,5 +65,3 @@ If this code is useful for your research, please consider giving star to our rep
 	pages = {23869-23878} 
 }
 ```
-## Questions
-If you have any questions, welcome contact me at 'duowen_chen@hotmail.com'
