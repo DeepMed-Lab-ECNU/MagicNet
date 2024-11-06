@@ -8,15 +8,12 @@
 <div align="center" border=> <img src=framework.png width="700" > </div>
 
 ## News
-- [2024.11.06] We have released our checkpoints and training logs on [model checkpoint](https://github.com/DeepMed-Lab-ECNU/MagicNet/releases) for 30% and 40% BTCV setting.
+- [2024.11.06] We have released our checkpoints and training logs on [model checkpoint](https://github.com/DeepMed-Lab-ECNU/MagicNet/releases) for 30% and 40% BTCV setting. And if you have any questions, welcome contact me at 'duowen_chen@hotmail.com'~~~
 - [2023.12.15] We have updated 'cube_losses.py'.
 - [2023.10.25] We have uploaded the data-splitting file 'btcv.txt' for BTCV dataset to help you reproduce/follow our work^_^!
 - [2023.07.01] We have updated the preprocessed data!
 - [2023.06.25] Our codes are released!
 - [2023.03.16] Repo created. Paper and code will come soon.
-  
-## Questions
-If you have any questions, welcome contact me at 'duowen_chen@hotmail.com'
 
 ## Installation
 - PyTorch 1.12.0
@@ -65,3 +62,6 @@ If this code is useful for your research, please consider giving star to our rep
 	pages = {23869-23878} 
 }
 ```
+
+## Questions
+If you have any questions, welcome contact me at 'duowen_chen@hotmail.com'
